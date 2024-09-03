@@ -12,6 +12,8 @@ import { TiTick } from "react-icons/ti";
 import Spline from "@splinetool/react-spline";
 import { BsWhatsapp } from "react-icons/bs";
 import Footer02 from "../../components/footer02/Footer02";
+import Welcome from "../../components/welcome/Welcome";
+import WhatSapp from "../../components/whatSapp/WhatSapp";
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -57,15 +59,13 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar />
-      <section className="welcome">
+      <Welcome text="Des solutions taillées pour vos besoins" />
+      {/* <section className="welcome">
         <div className="welcom-container">
           <div className="hero">
             <div className="hero-container">
               <div className="first">
                 <h1>Des solutions taillées pour vos besoins</h1>
-                {/* <h1>
-                  {"Hi "} <span className="wrap">{text}</span>{" "}
-                </h1> */}
                 <p className="details">
                   Nous combinons l'Ingéniosité et la Technologie pour répondre à
                   vos besoins, pour vous délivrer la solution optimale pour
@@ -115,10 +115,6 @@ const Home = () => {
                 </button>
               </div>
               <div className="second">
-                {/* <Spline
-                  scene="https://prod.spline.design/9Z9ona8CvpzrCS20/scene.splinecode"
-                  className="planet"
-                /> */}
                 <div className="tablette">
                   <div className="sub-container">
                     <img src={heroImg} alt="" />
@@ -128,7 +124,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="formations-section">
         <div className="formations-container">
           <Trainings />
@@ -150,16 +146,8 @@ const Home = () => {
           <ContactComp />
         </div>
       </section>
-      {/* <Footer /> */}
       <Footer02 />
-      <div className="whatsapp-container">
-        <a href="https://wa.me/237620232111" style={{ color: "white" }}>
-          <div className="sub-container">
-            <BsWhatsapp className="whatsapp-icon" />
-            <span style={{ fontSize: "15px" }}>Discutons</span>
-          </div>
-        </a>
-      </div>
+      <WhatSapp />
     </div>
   );
 };
