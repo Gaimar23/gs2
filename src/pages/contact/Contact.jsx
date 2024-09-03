@@ -20,13 +20,25 @@ const Contact = () => {
           sur divers sujets Nos différentes formations sur divers sujets sujets
           Nos différentes formations sur divers sujets
         </p> */}
+              <div className="animated-action">
+                <div className="wrapper">
+                  <p>Vous désirez </p>
+                  <div className="options">
+                    <span className="option">Une formation</span>
+                    <span className="option">Un Site ou Application Web</span>
+                    <span className="option">Une Application Mobile</span>
+                    <span className="option">Une formation</span>
+                  </div>
+                </div>
+              </div>
 
               <form className="message-us">
-                <p className="detail">
+                {/* <p className="detail">
                   Nos différentes formations sur divers sujetsNos différentes
                   formations sur divers sujets Nos différentes formations sur
                   divers sujets sujets Nos différentes formations
-                </p>
+                </p> */}
+                <h1 className="call-to-action">Envoyez nous un message</h1>
                 <div className="name input">
                   <label htmlFor="">Nom</label>
                   <input type="text" required />

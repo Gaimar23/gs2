@@ -3,6 +3,7 @@
     .contact-us{
         display: flex;
         justify-content: center;
+        // margin-top: 25px;
 
         .contact-us-container{
             max-width: 1366px;
@@ -55,6 +56,73 @@
             
                     }
             
+                    .animated-action{
+                        display: grid;
+                        place-items: center;
+                        margin-bottom: 20px;
+
+                        .wrapper{
+                            box-sizing: content-box;
+                            height: 50px;
+                            // background-color: white;
+                            padding: 20px 30px;
+                            display: flex;
+                        //    color: rgb(255, 255, 255);
+
+                           p{
+                            font-size: 30px;
+                            margin-right: 10px;
+                            color: black;
+                            align-content: center;
+                            font-weight: 700;
+                            -webkit-text-stroke: 0.1vw white;    
+
+                           }
+
+                           .options{
+                            overflow: hidden;
+                            // background-color: white;
+                            border-radius: 20px;
+                            color: black;
+                            -webkit-text-stroke: 0.1vw #0fada6;
+
+
+                            .option{
+                                display: block;
+                                height: 100%;
+                                padding-left: 10px;
+                                padding-right: 5px;
+                                border-radius: 10px;
+                                animation: spin_option 6s infinite;
+                                font-size: 30px;
+                                align-content: center;
+                                text-align: center;
+                                position: relative;
+
+                                &::before{
+                                    content: "";
+                                    width: 100%;
+                                    height: 2px;
+                                    position: absolute;
+                                    bottom: -0px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                                }
+                                // &::after{
+                                //     content: "";
+                                //     width: 50%;
+                                //     height: 2px;
+                                //     position: absolute;
+                                //     top: 0;
+                                //     left: 50%;
+                                //     transform: translateX(-50%);
+                                //     background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                                // }
+                            }
+                           }
+                        }
+                    }
             
                     form.message-us{
                         // border: 2px solid #cacaca;
@@ -69,6 +137,36 @@
                             margin-bottom: 35px;
                             color: #888888;
             
+                        }
+
+                        .call-to-action{
+                            text-align: center;
+                            color: #0fada6;
+                            position: relative;
+                            margin-bottom: 30px;
+
+                            &::before{
+                                content: "";
+                                width: 20%;
+                                height: 2px;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                // transform: translateY(-50%);
+                                background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                            }
+
+                            &::after{
+                                content: "";
+                                width: 20%;
+                                height: 2px;
+                                position: absolute;
+                                top: 100%;
+                                right: 0;
+                                // transform: translateY(-50%);
+                                background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                            }
+
                         }
             
                         .input,.message{
@@ -141,4 +239,437 @@
         }
     }
 
+}
+
+
+@keyframes spin_option {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    75%{
+        transform: translateY(-312%);
+    }
+    100%{
+        transform: translateY(-300%);
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+    .contact-us{
+
+        .contact-us-container{
+
+            .contact-component{
+            
+                .contact-us-global{
+            
+                    .animated-action{
+                        display: grid;
+                        place-items: center;
+                        margin-bottom: 20px;
+                
+                        .wrapper{
+                            box-sizing: content-box;
+                            height: 100px !important;
+                            padding: 20px 30px;
+                            display: flex;
+                            flex-flow: column !important;
+                
+                           p{
+                            font-size: 30px;
+                            margin-right: 10px;
+                            color: black;
+                            align-content: center;
+                            font-weight: 700;
+                            -webkit-text-stroke: 0.1vw white;    
+                            text-align: center;
+                           }
+                
+                           .options{
+                            overflow: hidden;
+                            // background-color: white;
+                            border-radius: 20px;
+                            color: black;
+                            -webkit-text-stroke: 0.1vw #0fada6;
+                
+                
+                            .option{
+                                display: block;
+                                height: 100%;
+                                padding-left: 10px;
+                                padding-right: 5px;
+                                border-radius: 10px;
+                                animation: spin_option 6s infinite;
+                                font-size: 30px;
+                                align-content: center;
+                                text-align: center;
+                                position: relative;
+                
+                                &::before{
+                                    content: "";
+                                    width: 100%;
+                                    height: 2px;
+                                    position: absolute;
+                                    bottom: -0px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                                }
+                            }
+                           }
+                        }
+                    }
+                
+
+            
+                }
+            }
+        
+            
+        }
+
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 910px){
+
+    .contact-us{
+
+        .contact-us-container{
+
+            .contact-component{
+                display: flex;
+                justify-content: center;
+            
+                .contact-us-global{
+                    width: 65%;
+            
+                    h2.title{
+                        font-size: 45px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+            
+                    p.desc{
+                        color: #888888;
+                        font-size: 18px;
+                        letter-spacing: 0.8px;
+                        text-align: center;
+                        padding: 0 60px;
+                        margin: 14px 0 50px 0;
+            
+                    }
+            
+            
+                    form.message-us{
+                        // border: 2px solid #cacaca;
+                        width: 100% !important;
+                        border-radius: 8px;
+                        padding: 50px;
+            
+                        .detail{
+                            // text-align: center;
+                            margin-bottom: 35px;
+                        }
+            
+                        .input,.message{
+                            width: 100%;
+                            display: flex;
+                            flex-flow: column;
+                            margin-top: 15px;
+            
+                        }
+            
+                        .name,.email{
+                            input{
+                                padding: 12px;
+                                background-color: transparent;
+                                outline: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                color: white;
+                            }
+                        }
+            
+                        .message{
+                            margin-bottom: 20px;
+                            textarea{
+                                padding: 12px;
+                                background-color: transparent;
+                                outline: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                color: white;
+                            }
+                        }
+            
+                    }
+                }
+            }
+        
+
+        }
+
+    }
+    
+}
+
+@media only screen and (max-width: 730px){
+    .contact-us{
+
+        .contact-us-container{
+
+            .contact-component{
+                display: flex;
+                justify-content: center;
+            
+                .contact-us-global{
+                    width: 75% !important;
+            
+                    h2.title{
+                        font-size: 45px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+            
+                    p.desc{
+                        color: #888888;
+                        font-size: 18px;
+                        letter-spacing: 0.8px;
+                        text-align: center;
+                        padding: 0 0px;
+                        margin: 14px 0 50px 0;
+            
+                    }
+            
+            
+                    form.message-us{
+                        width: 100%;
+                        border-radius: 8px;
+                        padding: 50px;
+            
+                        .detail{
+                            // text-align: center;
+                            margin-bottom: 35px;
+                        }
+            
+                        .input,.message{
+                            width: 100%;
+                            display: flex;
+                            flex-flow: column;
+                            margin-top: 15px;
+            
+                        }
+            
+                        .name,.email{
+                            input{
+                                padding: 12px;
+                                background-color: transparent;
+                                outline: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                color: white;
+                            }
+                        }
+            
+                        .message{
+                            margin-bottom: 20px;
+                            textarea{
+                                padding: 12px;
+                                background-color: transparent;
+                                outline: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                color: white;
+                            }
+                        }
+            
+                    }
+                }
+            }
+        
+            
+        }
+
+    }
+
+
+
+    
+}
+
+@media only screen and (max-width: 1000px){
+
+    .contact-us{
+
+        .contact-us-container{
+
+            .contact-component{
+            
+                .contact-us-global{
+            
+                    .animated-action{
+                        display: grid;
+                        place-items: center;
+                        margin-bottom: 20px;
+                
+                        .wrapper{
+                            box-sizing: content-box;
+                            height: 100px !important;
+                            padding: 20px 30px;
+                            display: flex;
+                            flex-flow: column !important;
+                
+                           p{
+                            font-size: 30px;
+                            margin-right: 10px;
+                            color: black;
+                            align-content: center;
+                            font-weight: 700;
+                            -webkit-text-stroke: 0.1vw white;    
+                            text-align: center;
+                           }
+                
+                           .options{
+                            overflow: hidden;
+                            // background-color: white;
+                            border-radius: 20px;
+                            color: black;
+                            -webkit-text-stroke: 0.1vw #0fada6;
+                
+                
+                            .option{
+                                display: block;
+                                height: 100%;
+                                padding-left: 10px;
+                                padding-right: 5px;
+                                border-radius: 10px;
+                                animation: spin_option 6s infinite;
+                                font-size: 20px !important;
+                                align-content: center;
+                                text-align: center;
+                                position: relative;
+                
+                                &::before{
+                                    content: "";
+                                    width: 100%;
+                                    height: 2px;
+                                    position: absolute;
+                                    bottom: -0px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                                }
+                            }
+                           }
+                        }
+                    }
+                
+
+            
+                }
+            }
+        
+            
+        }
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 500px){
+    .contact-us{
+
+        .contact-us-container{
+
+            .contact-component{
+                display: flex;
+                justify-content: center;
+            
+                .contact-us-global{
+                    width: 85% !important;
+            
+                    h2.title{
+                        font-size: 45px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+            
+                    p.desc{
+                        color: #888888;
+                        font-size: 15px;
+                        letter-spacing: 0.8px;
+                        text-align: center;
+                        padding: 0 0px;
+                        margin: 14px 0 50px 0;
+            
+                    }
+            
+            
+                    form.message-us{
+                        width: 100%;
+                        border-radius: 8px;
+                        padding: 20px !important;
+            
+                        .detail{
+                            margin-bottom: 35px;
+                            font-size: 12px;
+                        }
+            
+                        .input,.message{
+                            width: 100%;
+                            display: flex;
+                            flex-flow: column;
+                            margin-top: 15px;
+            
+                        }
+            
+                        .name,.email{
+                            input{
+                                padding: 12px;
+                                background-color: transparent;
+                                outline: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                color: white;
+                            }
+                        }
+            
+                        .message{
+                            margin-bottom: 20px;
+                            textarea{
+                                padding: 12px;
+                                background-color: transparent;
+                                outline: none;
+                                border-radius: 5px;
+                                font-size: 16px;
+                                color: white;
+                            }
+                        }
+            
+                    }
+                }
+            }
+          
+        }
+
+    }
+
+    
 }
