@@ -14,6 +14,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 100px;
+            margin-top: 15px;
 
             position: relative;
             // width: 100%;
@@ -33,10 +34,10 @@
                     &.my-logo{
 
                         .logo{
-                            width: 100px;
-                            height: 100px;
+                            width: 50px;
+                            height: 50px;
                             object-fit: cover;
-                            border-radius: 50%;
+                            // border-radius: 50%;
                         }
                     }
 
@@ -185,11 +186,12 @@
     
                 .top{
 
-                    // background-image: url(../../assets/images/bg-sidebar.png);
-                    // background-repeat: repeat;
+                    background-image: url(../../assets/images/bg-sidebar.jpg);
+                    background-repeat: no-repeat;
                     // background-position: left top;
-                    // background-attachment: fixed;
-                    // background-size: cover;
+                    background-position: right bottom;
+                    background-attachment: fixed;
+                    background-size: cover;
 
 
                     // background-color: #0fada6;
@@ -210,6 +212,8 @@
 
                     .brand-two{
                         margin-left: 80px;
+                        color: black;
+
                     }
                 }
 
@@ -248,9 +252,18 @@
                                     height: 28px;
                                     border-radius: 50%;
 
+                                    background-image: url(../../assets/images/bg-sidebar.jpg);
+                                    background-repeat: repeat;
+                                    // background-position: left top;
+                                    background-position: left top;
+                                    background-attachment: fixed;
+                                    background-size: cover;
+                
+
                                     .nav-icon{
                                         width: 20px;
                                         height: 20px;
+                                        // color: black;
                                         color: black;
                                     }
                                 }
@@ -279,7 +292,9 @@
     .navbar{    
         .container{    
             .frist-navbar{
-                padding: 10px 100px;    
+                padding: 10px 100px;   
+                margin-top: 15px;
+ 
         
                 .menu{
             
@@ -300,6 +315,8 @@
         .container{    
             .frist-navbar{
                 padding: 10px 60px;    
+                margin-top: 15px;
+
         
                 .menu{
                     display: none;
@@ -322,6 +339,8 @@
         .container{    
             .frist-navbar{
                 padding: 10px 20px;    
+                // padding-top: 25px;
+                margin-top: 15px;
         
                 .menu{
                     display: none;

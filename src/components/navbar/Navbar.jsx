@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.scss";
 import { FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/logo03.png";
 import { DataContext } from "../../autres/context/DataContext";
 import { IoHome } from "react-icons/io5";
 import { PiStudentFill } from "react-icons/pi";
@@ -163,7 +163,7 @@ const Navbar = () => {
             <div className="bottom">
               <ul className="menu">
                 <li className="main">
-                  <Link className="link-nav-mobile">
+                  <Link to="/" className="link-nav-mobile">
                     <div className="nav-icon-container">
                       <IoHome className="nav-icon" />
                     </div>
@@ -171,7 +171,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="main">
-                  <Link className="link-nav-mobile">
+                  <Link to="/formations" className="link-nav-mobile">
                     <div className="nav-icon-container">
                       <PiStudentFill className="nav-icon" />
                     </div>
@@ -179,7 +179,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="main">
-                  <Link className="link-nav-mobile">
+                  <Link to="/services" className="link-nav-mobile">
                     <div className="nav-icon-container">
                       <FaHandshake className="nav-icon" />
                     </div>
@@ -187,7 +187,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="main">
-                  <Link className="link-nav-mobile">
+                  <Link to="/projets" className="link-nav-mobile">
                     <div className="nav-icon-container">
                       <GrProjects className="nav-icon" />
                     </div>
@@ -195,7 +195,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="main">
-                  <Link className="link-nav-mobile">
+                  <Link to="/contact" className="link-nav-mobile">
                     <div className="nav-icon-container">
                       <MdContacts className="nav-icon" />
                     </div>
