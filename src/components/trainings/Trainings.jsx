@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Trainings.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -6,8 +6,10 @@ import Training1 from "../../assets/images/logo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { DataContext } from "../../autres/context/DataContext";
 
 const Trainings = () => {
+  const { trainingList } = useContext(DataContext);
   var settings = {
     dots: false,
     infinite: true,
@@ -104,7 +106,7 @@ const Trainings = () => {
 
         <div className="slider-container">
           <Slider {...settings} className="trainings-slider">
-            <div className="item">
+            {/* <div className="item">
               <div className="item-container">
                 <img src={Training1} alt="" />
                 <h5>Excel</h5>
@@ -127,23 +129,35 @@ const Trainings = () => {
                 <strong>Développement VBA</strong>
                 <button className="souscrire">Souscrire</button>
               </div>
-            </div>
-            <div className="item">
+            </div> */}
+            {/* <div className="item">
               <div className="item-container">
                 <img src={Training1} alt="" />
                 <h5>Développement Web</h5>
                 <strong>HTML,CSS, javascript</strong>
                 <button className="souscrire">Souscrire</button>
               </div>
-            </div>
-            <div className="item">
+            </div> */}
+            {/* <div className="item">
               <div className="item-container">
                 <img src={Training1} alt="" />
                 <h5>Développement Mobile</h5>
                 <strong>HTML,CSS, javascript</strong>
                 <button className="souscrire">Souscrire</button>
               </div>
-            </div>
+            </div> */}
+            {trainingList.map((course, index) => {
+              return (
+                <div className="item" key={index}>
+                  <div className="item-container">
+                    <img src={course.image} alt="" />
+                    <h5>{course.title} </h5>
+                    <strong>{course.desc}</strong>
+                    <button className="souscrire">Souscrire</button>
+                  </div>
+                </div>
+              );
+            })}
           </Slider>
         </div>
       </div>

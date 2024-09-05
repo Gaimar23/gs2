@@ -3,6 +3,7 @@ import heroImg from "../../assets/images/bgHead.png";
 import { TiTick } from "react-icons/ti";
 import { BsArrowRightCircle } from "react-icons/bs";
 import "./Welcome.scss";
+import video01 from "../../assets/videos/Tiers1920.mp4";
 
 const Welcome = ({ text }) => {
   return (
@@ -70,7 +71,9 @@ const Welcome = ({ text }) => {
             /> */}
               <div className="tablette">
                 <div className="sub-container">
-                  <img src={heroImg} alt="" />
+                  <video loop autoPlay muted>
+                    <source src={video01} type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </div>

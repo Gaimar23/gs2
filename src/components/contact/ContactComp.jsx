@@ -13,11 +13,13 @@ const ContactComp = () => {
         </p>
 
         <form className="message-us">
-          <p className="detail">
+          <h1 className="call-to-action">Envoyez nous un message</h1>
+
+          {/* <p className="detail">
             Nos différentes formations sur divers sujetsNos différentes
             formations sur divers sujets Nos différentes formations sur divers
             sujets sujets Nos différentes formations
-          </p>
+          </p> */}
           <div className="name input">
             <label htmlFor="">Nom</label>
             <input type="text" required />

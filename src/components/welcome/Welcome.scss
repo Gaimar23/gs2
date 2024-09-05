@@ -189,6 +189,21 @@
                             position: relative;
                             // overflow: hidden;
 
+                            overflow: hidden;
+                            min-height: 280px;
+                            // padding: 10px;
+                
+                            video{
+                                width: 110%;
+                                min-height: 280px;
+                                // min-height: 354.38px;
+                                // border-radius: 20px;
+                                // background-color: black;
+                            }
+                            
+                
+                
+
                             &::before{
                                 content: "";
                                 width: 6px;
@@ -605,7 +620,8 @@
 
                         .tablette{
                             width: 350px;
-                            height: 200px;
+                            // height: 200px;
+                            height: 224px;
                             // padding: 5px 10px;
                             border: 10px solid #dbdddd;
                             border-radius: 15px;
@@ -641,10 +657,29 @@
                             }
 
                             .sub-container{
+                                // width: 100%;
+                                // height: 100%;
+                                // position: relative;
+                                // overflow: hidden;
+
                                 width: 100%;
-                                height: 100%;
+                                height: 100% !important;
                                 position: relative;
                                 // overflow: hidden;
+    
+                                overflow: hidden;
+                                min-height: 200px;
+                                // padding: 10px;
+                    
+                                video{
+                                    width: 110%;
+                                    min-height: 200px;
+                                    // min-height: 354.38px;
+                                    // border-radius: 20px;
+                                    // background-color: black;
+                                }
+    
+
 
                                 &::before{
                                     content: "";

@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className="about-us-component">
       <div className="about-us-global">
-        <h2 className="title">Gaimard Solutions</h2>
+        <h2 className="title">Bave Consulting Solutions</h2>
         <p className="one">
           Nos différentes formations sur divers sujetsNos différentes formations
           sur divers sujets Nos différentes formations sur divers sujets sujets
