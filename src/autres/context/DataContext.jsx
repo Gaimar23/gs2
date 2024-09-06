@@ -34,7 +34,7 @@ const DataContextProvider = (props) => {
     },
     {
       image: cours7,
-      title: "Développement Mobile",
+      title: "Design app Mobile",
       desc: "React native, node",
     },
   ];

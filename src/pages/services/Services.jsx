@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react";
 import "./Services.scss";
 import Navbar from "../../components/navbar/Navbar";
 import Welcome from "../../components/welcome/Welcome";
-import service01 from "../../assets/images/project1.png";
-import service02 from "../../assets/images/project2.png";
-import service03 from "../../assets/images/project3.png";
+import service01 from "../../assets/images/project6.png";
+// import service01 from "../../assets/images/project1.png";
+import service02 from "../../assets/images/project4.png";
+import service03 from "../../assets/images/project5.png";
 import { MdOutlineSecurity } from "react-icons/md";
 import { CgPerformance } from "react-icons/cg";
 import { FaPersonRunning } from "react-icons/fa6";
 import { TbStackForward } from "react-icons/tb";
+import { IoChevronDownSharp } from "react-icons/io5";
 import Footer02 from "../../components/footer02/Footer02";
+import WhatSapp from "../../components/whatSapp/WhatSapp";
 
 const Services = () => {
   const [aWebsite, setAWebsite] = useState("");
@@ -43,7 +46,12 @@ const Services = () => {
                 <img src={service01} alt="" className="service-image" />
               </div>
               <h5 className="title">Conception d'un Site Web</h5>
-              <button>Commander</button>
+              <button
+                style={{ display: "flex", alignItems: "center", gap: "5px" }}
+              >
+                <span>Commander</span>
+                <IoChevronDownSharp size={20} />
+              </button>
             </div>
             <div className="bottom">
               <h5>Conception d'un Site Web</h5>
@@ -101,10 +109,15 @@ const Services = () => {
           <div className="item">
             <div className="top" id="mobile-app" onClick={handleMobile}>
               <div className="image-container">
-                <img src={service01} alt="" className="service-image" />
+                <img src={service02} alt="" className="service-image" />
               </div>
               <h5 className="title">Conception d'Appli Mobile</h5>
-              <button>Commander</button>
+              <button
+                style={{ display: "flex", alignItems: "center", gap: "5px" }}
+              >
+                <span>Commander</span>
+                <IoChevronDownSharp size={20} />
+              </button>
             </div>
             <div className="bottom">
               <h5>Conception d'Appli Mobile</h5>
@@ -162,10 +175,15 @@ const Services = () => {
           <div className="item">
             <div className="top" id="a-website" onClick={handleWebsite}>
               <div className="image-container">
-                <img src={service01} alt="" className="service-image" />
+                <img src={service03} alt="" className="service-image" />
               </div>
               <h5 className="title">Conception d'Appli Excel VBA</h5>
-              <button>Commander</button>
+              <button
+                style={{ display: "flex", alignItems: "center", gap: "5px" }}
+              >
+                <span>Commander</span>
+                <IoChevronDownSharp size={20} />
+              </button>
             </div>
             <div className="bottom">
               <h5>Conception d'Appli Excel VBA</h5>
@@ -215,6 +233,7 @@ const Services = () => {
         </div>
       </div>
       <Footer02 />
+      <WhatSapp />
     </div>
   );
 };
