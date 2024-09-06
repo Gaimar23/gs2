@@ -5,7 +5,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 import "./Welcome.scss";
 import video01 from "../../assets/videos/Tiers1920.mp4";
 
-const Welcome = ({ text }) => {
+const Welcome = ({ text, details }) => {
   return (
     <section className="welcome">
       <div className="welcom-container">
@@ -16,17 +16,9 @@ const Welcome = ({ text }) => {
               {/* <h1>
               {"Hi "} <span className="wrap">{text}</span>{" "}
             </h1> */}
-              <p className="details">
-                Nous combinons l'Ingéniosité et la Technologie pour répondre à
-                vos besoins, pour vous délivrer la solution optimale pour votre
-                business.
-              </p>
+              <p className="details">{details}</p>
               <div className="sevices-container">
                 <div className="list-services">
-                  <div className="article">
-                    <TiTick className="article-icon" />
-                    <span>Formations</span>
-                  </div>
                   <div className="article">
                     <TiTick className="article-icon" />
                     <span>Conception de site Web</span>
@@ -39,6 +31,10 @@ const Welcome = ({ text }) => {
                     <TiTick className="article-icon" />
                     <span>Application Excel VBA</span>
                   </div>
+                  <div className="article">
+                    <TiTick className="article-icon" />
+                    <span>Formations</span>
+                  </div>
                 </div>
                 <div className="counter">
                   <div className="percent">
@@ -48,19 +44,19 @@ const Welcome = ({ text }) => {
                         cx="105"
                         cy="105"
                         r="50"
-                        style={{ "--percent": 90 }}
+                        style={{ "--percent": 97 }}
                       ></circle>
                     </svg>
                     <div className="number">
                       <h3>
-                        90<span>%</span>
+                        99<span>%</span>
                       </h3>
                     </div>
                   </div>
                 </div>
               </div>
               <button className="action">
-                Let's talk
+                Start
                 <BsArrowRightCircle />
               </button>
             </div>

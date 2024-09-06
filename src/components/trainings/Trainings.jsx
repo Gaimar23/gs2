@@ -72,8 +72,8 @@ const Trainings = () => {
         <h2>Formations</h2>
         <p>
           Nos différentes formations sont conçues pour vous permettre de libérer
-          votre potentiel que vous soyez un analyste, financier, développeur
-          ..etc Alors faites le part.
+          votre potentiel que vous soyez un analyste, financier, développeur ...
+          Vous n'êtes plus qu'à un pas...
           {/* Nos différentes formations sur divers sujetsNos différentes formations
           sur divers sujets Nos différentes formations sur divers sujets */}
         </p>

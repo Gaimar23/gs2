@@ -54,7 +54,8 @@
             // background-image: conic-gradient(#0fada6,#ff00c8);
             // background-image: conic-gradient(transparent 80% ,#ff00c8);
             // background-image: conic-gradient(from 100deg, transparent 80% ,#ff00c8);
-            background-image: conic-gradient(from var(--angle), transparent 80% ,#ff00c8);
+            background-image: conic-gradient(from var(--angle), transparent 80% ,#0fada6);
+            // background-image: conic-gradient(from var(--angle), transparent 80% ,#ff00c8);
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
@@ -370,13 +371,31 @@
             background-color: #000000;
             // border-radius: 64px;
             border-radius: 20px;
-            text-align: center;
+            text-align: -webkit-center;
             padding: 60px 10px;
             // margin-top: -60px;
     
             h2{
                 font-size: 45px;
                 font-weight: 700;
+                width: fit-content;
+
+            &::before{
+                content: "Formations";
+                width: 0%;
+                height: 100%;
+                color: #0fada6;
+                -webkit-text-stroke: 0vw black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                // border-right: 2px solid #0fada6;
+                overflow: hidden;
+                animation: animate_title 6s linear infinite;
+                // box-shadow: 1px 1px 18px 1px #0fada6;
+
+            }
+
             }
     
             p{
@@ -422,7 +441,7 @@
             background-color: #000000;
             // border-radius: 64px;
             border-radius: 20px;
-            text-align: center;
+            text-align: -webkit-center;
             padding: 60px 5px;
             // margin-top: -60px;
     

@@ -57,7 +57,10 @@ const Formations = () => {
   return (
     <div className="formations">
       <Navbar />
-      <Welcome text="Des formations taillées pour vos besoins" />
+      <Welcome
+        text="Des formations taillées pour vos besoins"
+        details="Nous vous offrons des formations qui s'adapte à votre situation particulière & à votre planning."
+      />
       <section className="formations-section">
         <div className="formations-container">
           <div className="slider-container">

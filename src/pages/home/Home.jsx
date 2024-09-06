@@ -59,7 +59,13 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar />
-      <Welcome text="Des solutions taillées pour vos besoins" />
+      <Welcome
+        text="Des solutions taillées pour vos besoins"
+        details="Nous combinons l'Ingéniosité et la Technologie pour répondre à
+vos besoins, pour vous délivrer des solutions toujours plus
+innovantes et adaptées à votre business model.
+"
+      />
       {/* <section className="welcome">
         <div className="welcom-container">
           <div className="hero">
