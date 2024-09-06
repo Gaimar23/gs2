@@ -71,8 +71,11 @@ const Trainings = () => {
         <span className="point-animate"></span>
         <h2>Formations</h2>
         <p>
-          Nos différentes formations sur divers sujetsNos différentes formations
-          sur divers sujets Nos différentes formations sur divers sujets
+          Nos différentes formations sont conçues pour vous permettre de libérer
+          votre potentiel que vous soyez un analyste, financier, développeur
+          ..etc Alors faites le part.
+          {/* Nos différentes formations sur divers sujetsNos différentes formations
+          sur divers sujets Nos différentes formations sur divers sujets */}
         </p>
         {/* <Carousel
           swipeable={false}

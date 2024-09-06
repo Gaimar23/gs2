@@ -47,15 +47,15 @@ const Footer02 = () => {
           <div className="column">
             <div className="title">Liens Utiles</div>
             <ul className="list-item-footer">
-              <li>Conception de Site Web</li>
-              <li>Conception d'Appli Mobile</li>
-              <li>Dévéloppement d'Appli VBA</li>
+              <li>Formations</li>
+              <li>Projets</li>
+              <li>Servives</li>
             </ul>
           </div>
         </div>
         <div className="footer-lower-bottom">
           <div className="copy-right-social">
-            <p>© 2004-2024 gaimardsolutions.com - Premium Web Hosting</p>
+            <p>© 2024 braveconsultingsolutions.com - Designed by Gaimard F.</p>
             <div className="social-container">
               <div className="icon-container">
                 <BiLogoYoutube className="icon-soc" />

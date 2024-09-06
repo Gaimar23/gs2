@@ -49,8 +49,10 @@ const Projects = () => {
       <div className="projects-global">
         <h2>Projets</h2>
         <p>
-          Nos différentes formations sur divers sujetsNos différentes formations
-          sur divers sujets Nos différentes formations sur divers sujets
+          Quelque uns de nos projets donc sites ou applications web,
+          applications mobiles, applications Excel VBA finalisés ou en cours.
+          {/* Nos différentes formations sur divers sujetsNos différentes formations
+          sur divers sujets Nos différentes formations sur divers sujets */}
         </p>
         <div className="tab-container">
           <ul className="tab-list">

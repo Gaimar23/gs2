@@ -7,9 +7,11 @@ const ContactComp = () => {
       <div className="contact-us-global">
         <h2 className="title">Contact</h2>
         <p className="desc">
-          Nos différentes formations sur divers sujetsNos différentes formations
+          Nous sommes disponibles 24h / 7 pour repondre à vos besoins et vous
+          apporter une solution dans les plus bref delais.
+          {/* Nos différentes formations sur divers sujetsNos différentes formations
           sur divers sujets Nos différentes formations sur divers sujets sujets
-          Nos différentes formations sur divers sujets
+          Nos différentes formations sur divers sujets */}
         </p>
 
         <form className="message-us">
