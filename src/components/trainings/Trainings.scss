@@ -140,6 +140,7 @@
                         height: 250px;
                         object-fit: cover;
                         margin: 0 auto 10px auto;
+                        border-radius: 0 0 65px 0;
                     }
     
                     button.souscrire{
@@ -475,6 +476,10 @@
                         height: 250px;
                         object-fit: cover;
                         margin: 0 auto 15px auto;
+                    }
+
+                    .item-container{
+                        margin: 0 0;
                     }
     
                 }
