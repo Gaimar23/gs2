@@ -30,7 +30,8 @@ const AboutUs = () => {
           process, ensuring you're involved every step of the way. */}
         </p>
         <div className="image-container">
-          <img src={aboutImg} alt="" />
+          <img src={aboutImg} alt="" className="image1" />
+          <img src={aboutImg} alt="" className="image2" />
         </div>
         <div className="cards-container">
           <div className="item">

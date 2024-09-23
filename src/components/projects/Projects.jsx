@@ -3,39 +3,72 @@ import "./Projects.scss";
 import Project1 from "../../assets/images/project1.png";
 import Project2 from "../../assets/images/project2.png";
 import Project3 from "../../assets/images/project3.png";
-import ProjectCard from "../projectCard/ProjectCard";
+import ProjectCardVideo from "../projectCardVideo/ProjectCardVideo";
+import video01 from "../../assets/videos/Tiers1920.mp4";
 
 const Projects = () => {
+  // const ourProjects = [
+  //   {
+  //     title: "Business StartUp",
+  //     description: "Design & Development",
+  //     image: Project1,
+  //   },
+  //   {
+  //     title: "Excel Business App",
+  //     description: "Excel Development",
+  //     image: Project2,
+  //   },
+  //   {
+  //     title: "Business StartUp",
+  //     description: "Design & Development",
+  //     image: Project2,
+  //   },
+  //   {
+  //     title: "Client Project",
+  //     description: "Mobile Development",
+  //     image: Project3,
+  //   },
+  //   {
+  //     title: "Business StartUp",
+  //     description: "Design & Development",
+  //     image: Project1,
+  //   },
+  //   {
+  //     title: "Business StartUp",
+  //     description: "Design & Development",
+  //     image: Project3,
+  //   },
+  // ];
   const ourProjects = [
     {
-      title: "Business StartUp",
-      description: "Design & Development",
-      image: Project1,
+      title: "Appli Web",
+      description: "Design & Developpement",
+      video: "https://www.youtube.com/embed/Cp5ZCQuQLPc?si=cfl5ZMBi3SUD-DtY",
+    },
+    {
+      title: "Appli Web",
+      description: "Design & Developpement",
+      video: "https://www.youtube.com/embed/aNLQTZa6TwM?si=LWum6R-Qk-prolIT",
     },
     {
       title: "Excel Business App",
       description: "Excel Development",
-      image: Project2,
-    },
-    {
-      title: "Business StartUp",
-      description: "Design & Development",
-      image: Project2,
+      video: "https://www.youtube.com/embed/ZklG6SC05Cg?si=ktzvM-0fwkHYA9Nc",
     },
     {
       title: "Client Project",
       description: "Mobile Development",
-      image: Project3,
+      video: "https://www.youtube.com/embed/xozluVeoKVw?si=Qa6V4LqNZU7tsvHQ",
+    },
+    {
+      title: "Excel Business App",
+      description: "Excel Development",
+      video: "https://www.youtube.com/embed/xozluVeoKVw?si=Qa6V4LqNZU7tsvHQ",
     },
     {
       title: "Business StartUp",
       description: "Design & Development",
-      image: Project1,
-    },
-    {
-      title: "Business StartUp",
-      description: "Design & Development",
-      image: Project3,
+      video: "https://www.youtube.com/embed/xozluVeoKVw?si=Qa6V4LqNZU7tsvHQ",
     },
   ];
 
@@ -51,8 +84,6 @@ const Projects = () => {
         <p>
           Quelque uns de nos projets donc sites ou applications web,
           applications mobiles, applications Excel VBA finalisés ou en cours.
-          {/* Nos différentes formations sur divers sujetsNos différentes formations
-          sur divers sujets Nos différentes formations sur divers sujets */}
         </p>
         <div className="tab-container">
           <ul className="tab-list">
@@ -79,11 +110,21 @@ const Projects = () => {
           </ul>
           <div className="tab-content">
             <div className="first">
-              {ourProjects.map((project, index) => {
+              {/* {ourProjects.map((project, index) => {
                 return (
                   <ProjectCard
                     key={index}
                     image={project.image}
+                    title={project.title}
+                    description={project.description}
+                  />
+                );
+              })} */}
+              {ourProjects.map((project, index) => {
+                return (
+                  <ProjectCardVideo
+                    key={index}
+                    demoVideo={project.video}
                     title={project.title}
                     description={project.description}
                   />
