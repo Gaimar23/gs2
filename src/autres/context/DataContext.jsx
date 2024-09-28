@@ -3,8 +3,8 @@ import Training1 from "../../assets/images/logo.png";
 import cours3 from "../../assets/images/cours/1.png";
 import cours4 from "../../assets/images/cours/2.png";
 import cours5 from "../../assets/images/cours/3.png";
-import cours6 from "../../assets/images/cours/6.png";
-import cours7 from "../../assets/images/cours/7.png";
+import cours6 from "../../assets/images/cours/4.png";
+import cours7 from "../../assets/images/cours/5.png";
 
 export const DataContext = createContext(null);
 

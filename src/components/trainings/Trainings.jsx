@@ -13,7 +13,7 @@ const Trainings = () => {
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -22,7 +22,7 @@ const Trainings = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -154,9 +154,14 @@ const Trainings = () => {
                 <div className="item" key={index}>
                   <div className="item-container">
                     <img src={course.image} alt="" />
-                    <h5>{course.title} </h5>
-                    <strong>{course.desc}</strong>
-                    <button className="souscrire">Souscrire</button>
+                    {/* <h5>{course.title} </h5>
+                    <strong>{course.desc}</strong> */}
+                    <a
+                      href="https://wa.me/237620232111"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      <button className="souscrire">Souscrire</button>
+                    </a>
                   </div>
                 </div>
               );

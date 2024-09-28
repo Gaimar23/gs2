@@ -72,7 +72,7 @@ const Projects = () => {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState("first");
+  const [activeTab, setActiveTab] = useState("second");
 
   const updateTabLink = (link) => {
     setActiveTab(link);

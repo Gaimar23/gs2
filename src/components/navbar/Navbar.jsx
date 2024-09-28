@@ -157,7 +157,7 @@ const Navbar = () => {
             onClick={updateCounterNavbar}
           >
             <div className="top">
-              <span className="brand-one">Brave</span>
+              <span className="brand-one">Brave Cs</span>
               <span className="brand-two">Solutions</span>
             </div>
             <div className="bottom">

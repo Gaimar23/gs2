@@ -19,7 +19,7 @@ const Formations = () => {
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -28,7 +28,7 @@ const Formations = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -80,9 +80,14 @@ const Formations = () => {
                   <div className="item" key={index}>
                     <div className="item-container">
                       <img src={training.image} alt="" />
-                      <h5>{training.title}</h5>
-                      <strong className="details">{training.desc}</strong>
-                      <button className="souscrire">Souscrire</button>
+                      {/* <h5>{training.title}</h5>
+                      <strong className="details">{training.desc}</strong> */}
+                      <a
+                        href="https://wa.me/237620232111"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        <button className="souscrire">Souscrire</button>
+                      </a>
                     </div>
                   </div>
                 );
