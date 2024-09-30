@@ -58,7 +58,7 @@ const Projects = () => {
     {
       title: "Client Project",
       description: "Mobile Development",
-      video: "https://www.youtube.com/embed/xozluVeoKVw?si=Qa6V4LqNZU7tsvHQ",
+      video: "https://www.youtube.com/embed/FRn-x2sW4oo?si=Qj0F6-z0fct_ryN0",
     },
     {
       title: "Excel Business App",

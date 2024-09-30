@@ -17,10 +17,12 @@ import WhatSapp from "../../components/whatSapp/WhatSapp";
 const Services = () => {
   const [aWebsite, setAWebsite] = useState("");
   const [mobileApp, setMobileApp] = useState("");
+  const [excelApp, setExcelApp] = useState("");
 
   useEffect(() => {
     setAWebsite(document.getElementById("a-website"));
     setMobileApp(document.getElementById("mobile-app"));
+    setExcelApp(document.getElementById("excel-app"));
   }, []);
 
   const handleWebsite = () => {
@@ -32,6 +34,11 @@ const Services = () => {
     mobileApp.parentElement.classList.contains("open")
       ? mobileApp.parentElement.classList.remove("open")
       : mobileApp.parentElement.classList.add("open");
+  };
+  const handleExcel = () => {
+    excelApp.parentElement.classList.contains("open")
+      ? excelApp.parentElement.classList.remove("open")
+      : excelApp.parentElement.classList.add("open");
   };
 
   return (
@@ -100,7 +107,12 @@ const Services = () => {
                     nous témoignez en nous confiant votre projet.
                   </p> */}
                   <div className="btn-container">
-                    <button className="order-btn">Commander</button>
+                    <a
+                      href="https://wa.me/237620232111"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      <button className="order-btn">Commander</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -166,14 +178,19 @@ const Services = () => {
                     nous témoignez en nous confiant votre projet.
                   </p> */}
                   <div className="btn-container">
-                    <button className="order-btn">Commander</button>
+                    <a
+                      href="https://wa.me/237620232111"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      <button className="order-btn">Commander</button>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="item">
-            <div className="top" id="a-website" onClick={handleWebsite}>
+            <div className="top" id="excel-app" onClick={handleExcel}>
               <div className="image-container">
                 <img src={service03} alt="" className="service-image" />
               </div>
@@ -189,42 +206,56 @@ const Services = () => {
               <h5>Conception d'Appli Excel VBA</h5>
               <div className="details">
                 <div className="left">
-                  <p>
-                    Vous désirez un site web qui combine la performance, la
-                    rapidité, la sécurité...etc Nous récourrons aux technologies
-                    les plus récentes pour donner corps à votre vision ou
-                    projet, vous délivrer des solutions qui réflectent votre
-                    besoin. Qu'il s'agisse d'un site statique ou dynamique,
-                    notre équipe d'expert doté de plusieurs années d'expérience
-                    s'atèle à la tâche pour vous délivrer une solution Web dans
-                    les temps impartis. Nous vous rémercions par avance de la
-                    confiance que vous nous témoignez en nous confiant votre
-                    projet.
+                  <p className="one">
+                    Pour vous délivrer des solutions qui réflectent votre besoin
+                    et s'intégrent à votre stratégie, Nous récourrons aux
+                    technologies les plus récentes.
+                  </p>
+                  <p className="two">
+                    Quelque soit les processus ou tâches que vous aimeriez
+                    automatiser sur Excel, notre équipe d'expert s'atèle à la
+                    tâche pour vous offrir la meilleure des solutions, vous
+                    offrant ainsi la meilleure des expériences dans le
+                    management de votre business.
                   </p>
                 </div>
                 <div className="right">
-                  <p>Un site Web </p>
-                  <div className="options">
-                    <div className="option">
-                      <span>Performant</span>{" "}
-                      <CgPerformance className="option-icon" />
+                  <div className="options-container">
+                    <p>Une Appli Excel</p>
+                    <div className="options">
+                      <div className="option">
+                        <span>Performant</span>{" "}
+                        <CgPerformance className="option-icon" />
+                      </div>
+                      <div className="option">
+                        <span>Rapide</span>
+                        <FaPersonRunning className="option-icon" />
+                      </div>
+                      <div className="option">
+                        <span>Sécurisé</span>
+                        <MdOutlineSecurity className="option-icon" />
+                      </div>
+                      <div className="option">
+                        <span>Evolutif</span>
+                        <TbStackForward className="option-icon" />
+                      </div>
+                      <div className="option">
+                        <span>Performant</span>{" "}
+                        <CgPerformance className="option-icon" />
+                      </div>
                     </div>
-                    <div className="option">
-                      <span>Rapide</span>
-                      <FaPersonRunning className="option-icon" />
-                    </div>
-                    <div className="option">
-                      <span>Sécurisé</span>
-                      <MdOutlineSecurity className="option-icon" />
-                    </div>
-                    <div className="option">
-                      <span>Evolutif</span>
-                      <TbStackForward className="option-icon" />
-                    </div>
-                    <div className="option">
-                      <span>Performant</span>{" "}
-                      <CgPerformance className="option-icon" />
-                    </div>
+                  </div>
+                  {/* <p>
+                    Nous vous rémercions par avance de la confiance que vous
+                    nous témoignez en nous confiant votre projet.
+                  </p> */}
+                  <div className="btn-container">
+                    <a
+                      href="https://wa.me/237620232111"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      <button className="order-btn">Commander</button>
+                    </a>
                   </div>
                 </div>
               </div>
