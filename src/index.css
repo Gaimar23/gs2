@@ -14,7 +14,20 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-  /* margin: 0;
-  padding: 0; */
   line-height: normal;
+}
+
+:root{
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #0fada6;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #ff00c8;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
 }
