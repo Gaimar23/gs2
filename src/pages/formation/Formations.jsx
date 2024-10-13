@@ -83,7 +83,9 @@ const Formations = () => {
                       {/* <h5>{training.title}</h5>
                       <strong className="details">{training.desc}</strong> */}
                       <a
-                        href="https://wa.me/237620232111"
+                        href={
+                          "https://wa.me/237620232111?text=" + training.whatsapp
+                        }
                         style={{ color: "white", textDecoration: "none" }}
                       >
                         <button className="souscrire">Souscrire</button>

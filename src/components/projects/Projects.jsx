@@ -5,6 +5,9 @@ import Project2 from "../../assets/images/project2.png";
 import Project3 from "../../assets/images/project3.png";
 import ProjectCardVideo from "../projectCardVideo/ProjectCardVideo";
 import video01 from "../../assets/videos/Tiers1920.mp4";
+import { FaTv } from "react-icons/fa6";
+import { HiMiniArrowLongLeft } from "react-icons/hi2";
+import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 const Projects = () => {
   // const ourProjects = [
@@ -91,7 +94,8 @@ const Projects = () => {
               onClick={() => updateTabLink("first")}
               className={activeTab === "first" ? "tab-link active" : "tab-link"}
             >
-              Tab N°01
+              {/* Tab N°01 */}
+              <HiMiniArrowLongLeft size={15} />
             </li>
             <li
               onClick={() => updateTabLink("second")}
@@ -99,13 +103,15 @@ const Projects = () => {
                 activeTab === "second" ? "tab-link active" : "tab-link"
               }
             >
-              Tab N°02
+              {/* Tab N°02 */}
+              <FaTv size={15} />
             </li>
             <li
               onClick={() => updateTabLink("third")}
               className={activeTab === "third" ? "tab-link active" : "tab-link"}
             >
-              Tab N°03
+              {/* Tab N°03 */}
+              <HiMiniArrowLongRight size={15} />
             </li>
           </ul>
           <div className="tab-content">

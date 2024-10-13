@@ -4,7 +4,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/logo03.png";
 
 const Footer02 = () => {
   return (
@@ -17,10 +17,10 @@ const Footer02 = () => {
               <h1 className="le-logo">Solutions</h1>
             </div>
             <p className="mission">
-              We are a web hosting provider on a mission to bring success to
-              everyone online. We constantly improve our server technology,
-              provide professional support, and simplify site creation with our
-              AI Website Builder
+              Parce que vous créer de la valeur, nous ne faisons pas que vous
+              fournir des solutions en ligne et en local pour propulser votre
+              business, votre carrière, votre vision... Nous vous accompagnons
+              également à chaque étape de votre développement.
             </p>
             <div className="location">
               <FaLocationDot className="icon-location" />
@@ -47,9 +47,24 @@ const Footer02 = () => {
           <div className="column">
             <div className="title">Liens Utiles</div>
             <ul className="list-item-footer">
-              <li>Formations</li>
-              <li>Projets</li>
-              <li>Servives</li>
+              <a
+                href="/formations"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <li>Formations</li>
+              </a>
+              <a
+                href="/projets"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <li>Projets</li>
+              </a>
+              <a
+                href="/services"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <li>Servives</li>
+              </a>
             </ul>
           </div>
         </div>

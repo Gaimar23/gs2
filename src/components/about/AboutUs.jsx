@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.scss";
 import aboutImg from "../../assets/images/about.jpg";
+import aboutImg1 from "../../assets/images/about1.jpg";
 
 const AboutUs = () => {
   return (
@@ -30,7 +31,7 @@ const AboutUs = () => {
           process, ensuring you're involved every step of the way. */}
         </p>
         <div className="image-container">
-          <img src={aboutImg} alt="" className="image1" />
+          <img src={aboutImg1} alt="" className="image1" />
           <img src={aboutImg} alt="" className="image2" />
         </div>
         <div className="cards-container">

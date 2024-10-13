@@ -157,7 +157,10 @@ const Trainings = () => {
                     {/* <h5>{course.title} </h5>
                     <strong>{course.desc}</strong> */}
                     <a
-                      href="https://wa.me/237620232111"
+                      // href={"https://wa.me/237620232111?text" + course.whatsapp}
+                      href={
+                        "https://wa.me/237620232111?text=" + course.whatsapp
+                      }
                       style={{ color: "white", textDecoration: "none" }}
                     >
                       <button className="souscrire">Souscrire</button>

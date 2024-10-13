@@ -3,7 +3,8 @@ import heroImg from "../../assets/images/bgHead.png";
 import { TiTick } from "react-icons/ti";
 import { BsArrowRightCircle } from "react-icons/bs";
 import "./Welcome.scss";
-import video01 from "../../assets/videos/Tiers1920.mp4";
+// import video01 from "../../assets/videos/Tiers1920.mp4";
+import video01 from "../../assets/videos/video03.mp4";
 
 const Welcome = ({ text, details }) => {
   return (

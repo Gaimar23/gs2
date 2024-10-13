@@ -140,7 +140,12 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <div className="btn-start">Start</div>
+            <a
+              href="https://wa.me/237620232111"
+              style={{ textDecoration: "none" }}
+            >
+              <div className="btn-start">Start</div>
+            </a>
           </ul>
           <div className="nav-icon-menu" onClick={handleSideBar}>
             <FiMenu className="nav-icon-menu-sub" />
