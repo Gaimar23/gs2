@@ -61,6 +61,7 @@
                     li{
                         font-size: 15px;
                         font-weight: 300;
+                        color: #888888;
                     }
                 }
                 .image-container{
@@ -86,6 +87,7 @@
 
                 p.mission{
                     font-size: 15px;
+                    color: #888888;
                 }
 
                 .location{
@@ -93,6 +95,10 @@
                     display: flex;
                     align-items: center;
                     gap: 10px;
+
+                    span{
+                        color: #888888;
+                    }
 
                     .icon-location{
                         width: 20px;
@@ -235,7 +241,9 @@
                 align-items: center;
                 justify-content: space-between;
                 // gap: 150px;
-
+                p{
+                    color: #888888;
+                }
                 .social-container{
                     display: flex;
                     align-items: center;
