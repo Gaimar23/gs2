@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Trainings.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -6,12 +6,14 @@ import Training1 from "../../assets/images/logo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { DataContext } from "../../autres/context/DataContext";
 
 const Trainings = () => {
+  const { trainingList } = useContext(DataContext);
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -20,7 +22,7 @@ const Trainings = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -69,8 +71,11 @@ const Trainings = () => {
         <span className="point-animate"></span>
         <h2>Formations</h2>
         <p>
-          Nos différentes formations sur divers sujetsNos différentes formations
-          sur divers sujets Nos différentes formations sur divers sujets
+          Nos différentes formations sont conçues pour vous permettre de libérer
+          votre potentiel que vous soyez un analyste, financier, développeur ...
+          Vous n'êtes plus qu'à un pas...
+          {/* Nos différentes formations sur divers sujetsNos différentes formations
+          sur divers sujets Nos différentes formations sur divers sujets */}
         </p>
         {/* <Carousel
           swipeable={false}
@@ -104,7 +109,7 @@ const Trainings = () => {
 
         <div className="slider-container">
           <Slider {...settings} className="trainings-slider">
-            <div className="item">
+            {/* <div className="item">
               <div className="item-container">
                 <img src={Training1} alt="" />
                 <h5>Excel</h5>
@@ -127,23 +132,43 @@ const Trainings = () => {
                 <strong>Développement VBA</strong>
                 <button className="souscrire">Souscrire</button>
               </div>
-            </div>
-            <div className="item">
+            </div> */}
+            {/* <div className="item">
               <div className="item-container">
                 <img src={Training1} alt="" />
                 <h5>Développement Web</h5>
                 <strong>HTML,CSS, javascript</strong>
                 <button className="souscrire">Souscrire</button>
               </div>
-            </div>
-            <div className="item">
+            </div> */}
+            {/* <div className="item">
               <div className="item-container">
                 <img src={Training1} alt="" />
                 <h5>Développement Mobile</h5>
                 <strong>HTML,CSS, javascript</strong>
                 <button className="souscrire">Souscrire</button>
               </div>
-            </div>
+            </div> */}
+            {trainingList.map((course, index) => {
+              return (
+                <div className="item" key={index}>
+                  <div className="item-container">
+                    <img src={course.image} alt="" />
+                    {/* <h5>{course.title} </h5>
+                    <strong>{course.desc}</strong> */}
+                    <a
+                      // href={"https://wa.me/237620232111?text" + course.whatsapp}
+                      href={
+                        "https://wa.me/237620232111?text=" + course.whatsapp
+                      }
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      <button className="souscrire">Souscrire</button>
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
           </Slider>
         </div>
       </div>

@@ -140,7 +140,12 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <div className="btn-start">Start</div>
+            <a
+              href="https://wa.me/237620232111"
+              style={{ textDecoration: "none" }}
+            >
+              <div className="btn-start">Start</div>
+            </a>
           </ul>
           <div className="nav-icon-menu" onClick={handleSideBar}>
             <FiMenu className="nav-icon-menu-sub" />
@@ -157,7 +162,7 @@ const Navbar = () => {
             onClick={updateCounterNavbar}
           >
             <div className="top">
-              <span className="brand-one">Gaimard</span>
+              <span className="brand-one">Brave Cs</span>
               <span className="brand-two">Solutions</span>
             </div>
             <div className="bottom">

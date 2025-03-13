@@ -1,5 +1,10 @@
 import { createContext, useState } from "react";
 import Training1 from "../../assets/images/logo.png";
+import cours3 from "../../assets/images/cours/3.png";
+import cours4 from "../../assets/images/cours/4.png";
+import cours5 from "../../assets/images/cours/1.png";
+import cours6 from "../../assets/images/cours/5.png";
+import cours7 from "../../assets/images/cours/2.png";
 
 export const DataContext = createContext(null);
 
@@ -8,29 +13,39 @@ const DataContextProvider = (props) => {
 
   const trainingList = [
     {
-      image: Training1,
+      image: cours3,
       title: "Excel",
-      desc: "Les Bases",
+      desc: "Tout savoir sur Excel",
+      whatsapp:
+        "Dites m'en plus au sujet de votre formation TOUT SAVOIR SUR EXCEL",
     },
     {
-      image: Training1,
+      image: cours4,
       title: "Excel",
       desc: "Tableau de Bord & TCD",
+      whatsapp:
+        "Dites m'en plus au sujet de votre formation TABLEAU DE BORD ET TCD",
     },
     {
-      image: Training1,
+      image: cours5,
       title: "Excel",
-      desc: "Développement VBA",
+      desc: "Macros & VBA",
+      whatsapp:
+        "Dites m'en plus au sujet de votre formation EXCEL MACRO ET VBA",
     },
     {
-      image: Training1,
+      image: cours6,
       title: "Développement Web",
-      desc: "HTML,CSS, javascript",
+      desc: "Full Stack",
+      whatsapp:
+        "Dites m'en plus au sujet de votre formation DEVELOPPEMENT WEB FULL STACK",
     },
     {
-      image: Training1,
-      title: "Développement Mobile",
-      desc: "HTML,CSS, javascript",
+      image: cours7,
+      title: "Développement",
+      desc: "Mobile",
+      whatsapp:
+        "Dites m'en plus au sujet de votre formation DEVELOPPEMENT MOBILE AVEC REACT NATIVE",
     },
   ];
 

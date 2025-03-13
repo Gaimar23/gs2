@@ -72,10 +72,26 @@
             margin-bottom: 45px;
             width: 700px;
 
-            img{
-                width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .image1,.image2{
+                width: 50%;
                 height: 100%;
                 object-fit: cover;
+            }
+
+            .image1{
+                border-radius: 50% 0 50% 50%;
+                padding: 5px 5px 0 0;
+                background-color: #0fada6;
+            }
+            .image2{
+                border-radius: 50% 50% 0 50%;
+                padding: 0 5px 5px 0;
+                background-color: #0fada6;
+
             }
         }
 

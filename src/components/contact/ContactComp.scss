@@ -61,6 +61,38 @@
 
             }
 
+
+            .call-to-action{
+
+                text-align: center;
+                color: #0fada6;
+                position: relative;
+                margin-bottom: 30px;
+
+                &::before{
+                    content: "";
+                    width: 20%;
+                    height: 2px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    // transform: translateY(-50%);
+                    background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                }
+
+                &::after{
+                    content: "";
+                    width: 20%;
+                    height: 2px;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    // transform: translateY(-50%);
+                    background: linear-gradient(to right, transparent,#0fada6 ,transparent);
+                }
+
+            }
+
             .input,.message{
                 width: 100%;
                 display: flex;

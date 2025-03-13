@@ -5,10 +5,13 @@ import Formations from "./pages/formation/Formations";
 import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
 import Projets from "./pages/projets/Projets";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />

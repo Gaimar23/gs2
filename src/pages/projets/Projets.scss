@@ -1,1 +1,29 @@
-.projets{}
+.projets{
+
+    .section-app-web{
+        display: flex;
+        justify-content: center;
+        // margin-top: 30px;
+
+        .app-web-mobile{
+            max-width: 1366px;
+            width: 100%;
+            display: flex;
+            justify-content: center;    
+
+        }
+    }
+
+    .section-app-excel{
+        display: flex;
+        justify-content: center;
+
+        .app-excel-vba{
+            max-width: 1366px;
+            width: 100%;
+            display: flex;
+            justify-content: center;    
+
+        }
+    }
+}
