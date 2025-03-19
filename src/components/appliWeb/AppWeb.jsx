@@ -3,6 +3,7 @@ import "./AppWeb.scss";
 import rexHome from "../../assets/images/Excel.png";
 import ac from "../../assets/images/Excel2.png";
 import awsd from "../../assets/images/Excel3.png";
+import app_scolaire from "../../assets/images/app_scolaire.png";
 
 const AppWeb = () => {
   return (
@@ -24,6 +25,9 @@ const AppWeb = () => {
             <a href="https://eloquent-salamander-f61ed0.netlify.app/programs">
               <img src={ac} alt="" className="slide-image" />
             </a>
+            <a href="https://helpful-genie-eadfe0.netlify.app/">
+              <img src={app_scolaire} alt="" className="slide-image" />
+            </a>
           </div>
           <div className="slide-track">
             <a href="https://66f9d93434361b814a0114be--peppy-lollipop-967e71.netlify.app/">
@@ -34,6 +38,9 @@ const AppWeb = () => {
             </a>
             <a href="https://eloquent-salamander-f61ed0.netlify.app/programs">
               <img src={ac} alt="" className="slide-image" />
+            </a>
+            <a href="https://helpful-genie-eadfe0.netlify.app/">
+              <img src={app_scolaire} alt="" className="slide-image" />
             </a>
           </div>
         </div>
@@ -48,6 +55,9 @@ const AppWeb = () => {
             <a href="https://eloquent-salamander-f61ed0.netlify.app/programs">
               <img src={ac} alt="" className="slide-image" />
             </a>
+            <a href="https://helpful-genie-eadfe0.netlify.app/">
+              <img src={app_scolaire} alt="" className="slide-image" />
+            </a>
           </div>
           <div className="slide-track">
             <a href="https://66f9d93434361b814a0114be--peppy-lollipop-967e71.netlify.app/">
@@ -58,6 +68,9 @@ const AppWeb = () => {
             </a>
             <a href="https://eloquent-salamander-f61ed0.netlify.app/programs">
               <img src={ac} alt="" className="slide-image" />
+            </a>
+            <a href="https://helpful-genie-eadfe0.netlify.app/">
+              <img src={app_scolaire} alt="" className="slide-image" />
             </a>
           </div>
         </div>

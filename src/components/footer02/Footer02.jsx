@@ -5,6 +5,7 @@ import { BiLogoYoutube } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import Logo from "../../assets/images/logo03.png";
+import { Link } from "react-router-dom";
 
 const Footer02 = () => {
   return (
@@ -72,15 +73,21 @@ const Footer02 = () => {
           <div className="copy-right-social">
             <p>© 2024 braveconsultingsolutions.com - Designed by Gaimard F.</p>
             <div className="social-container">
-              <div className="icon-container">
+              <Link
+                to={"https://www.youtube.com/@gaimardfoko"}
+                className="icon-container"
+              >
                 <BiLogoYoutube className="icon-soc" />
-              </div>
-              <div className="icon-container">
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/in/gaimard-foko-783a04149/"}
+                className="icon-container"
+              >
                 <BiLogoLinkedin className="icon-soc" />
-              </div>
-              <div className="icon-container">
+              </Link>
+              <Link className="icon-container">
                 <FaFacebookF className="icon-soc" />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

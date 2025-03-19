@@ -71,7 +71,7 @@ const Projects = () => {
     {
       title: "Business StartUp",
       description: "Design & Development",
-      video: "https://www.youtube.com/embed/xozluVeoKVw?si=Qa6V4LqNZU7tsvHQ",
+      video: "https://www.youtube.com/embed/MxmSCK4BLNY?si=wx7-awNxEkNwVtzf",
     },
   ];
 
