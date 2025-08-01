@@ -71,7 +71,11 @@ const Navbar = () => {
       <div className="container">
         <div className="frist-navbar">
           <div className="logo-container">
-            <Link to="/" className="link-nav my-logo">
+            <Link
+              to="/"
+              className="link-nav my-logo"
+              onClick={() => updateLink("accueil")}
+            >
               <img src={Logo} alt="" className="logo" />
             </Link>
             <Link to="/" className="link-nav name">

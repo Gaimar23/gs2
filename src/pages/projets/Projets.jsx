@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "./Projets.scss";
 import Navbar from "../../components/navbar/Navbar";
 import Welcome from "../../components/welcome/Welcome";
 import Footer02 from "../../components/footer02/Footer02";
 import AppWeb from "../../components/appliWeb/AppWeb";
 import AppExcel from "../../components/appExcel/AppExcel";
+import { DataContext } from "../../autres/context/DataContext";
 
 const Projets = () => {
+  const { activeLink, setActiveLink } = useContext(DataContext);
+
+  useEffect(() => {
+    if (activeLink !== "projets") {
+      setActiveLink("projets");
+    }
+  }, []);
+
   return (
     <div className="projets">
       <Navbar />

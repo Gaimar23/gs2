@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "./Services.scss";
 import Navbar from "../../components/navbar/Navbar";
 import Welcome from "../../components/welcome/Welcome";
@@ -13,15 +13,19 @@ import { TbStackForward } from "react-icons/tb";
 import { IoChevronDownSharp } from "react-icons/io5";
 import Footer02 from "../../components/footer02/Footer02";
 import WhatSapp from "../../components/whatSapp/WhatSapp";
+import { DataContext } from "../../autres/context/DataContext";
 
 const Services = () => {
-  const [aWebsite, setAWebsite] = useState("");
-  const [mobileApp, setMobileApp] = useState("");
-  const [excelApp, setExcelApp] = useState("");
-
   const websiteRef = useRef(null);
   const mobileRef = useRef(null);
   const excelAppRef = useRef(null);
+  const { activeLink, setActiveLink } = useContext(DataContext);
+
+  useEffect(() => {
+    if (activeLink !== "services") {
+      setActiveLink("services");
+    }
+  }, []);
 
   const handleWebsite = () => {
     if (websiteRef.current?.parentElement.classList.contains("open")) {

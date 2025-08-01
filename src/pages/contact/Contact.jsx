@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import "./Contact.scss";
 import Navbar from "../../components/navbar/Navbar";
 import Footer02 from "../../components/footer02/Footer02";
@@ -6,12 +6,20 @@ import Welcome from "../../components/welcome/Welcome";
 import WhatSapp from "../../components/whatSapp/WhatSapp";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { DataContext } from "../../autres/context/DataContext";
 
 const Contact = () => {
   const clientForm = useRef();
   const serviceId = import.meta.env.VITE_MY_SERVICE_ID;
   const templateId = import.meta.env.VITE_MY_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_MY_PUBLIC_KEY;
+  const { activeLink, setActiveLink } = useContext(DataContext);
+
+  useEffect(() => {
+    if (activeLink !== "contact") {
+      setActiveLink("contact");
+    }
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();

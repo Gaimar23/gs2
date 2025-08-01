@@ -1,9 +1,6 @@
-import React, { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./Formations.scss";
 import Navbar from "../../components/navbar/Navbar";
-import { TiTick } from "react-icons/ti";
-import { BsArrowRightCircle } from "react-icons/bs";
-import heroImg from "../../assets/images/bgHead.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +8,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Footer02 from "../../components/footer02/Footer02";
 import { DataContext } from "../../autres/context/DataContext";
-import { BsWhatsapp } from "react-icons/bs";
 import Welcome from "../../components/welcome/Welcome";
 import WhatSapp from "../../components/whatSapp/WhatSapp";
 
@@ -52,7 +48,13 @@ const Formations = () => {
     ],
   };
 
-  const { trainingList } = useContext(DataContext);
+  const { trainingList, activeLink, setActiveLink } = useContext(DataContext);
+
+  useEffect(() => {
+    if (activeLink !== "formations") {
+      setActiveLink("formations");
+    }
+  }, []);
 
   return (
     <div className="formations">
