@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Services.scss";
 import Navbar from "../../components/navbar/Navbar";
 import Welcome from "../../components/welcome/Welcome";
@@ -19,26 +19,30 @@ const Services = () => {
   const [mobileApp, setMobileApp] = useState("");
   const [excelApp, setExcelApp] = useState("");
 
-  useEffect(() => {
-    setAWebsite(document.getElementById("a-website"));
-    setMobileApp(document.getElementById("mobile-app"));
-    setExcelApp(document.getElementById("excel-app"));
-  }, []);
+  const websiteRef = useRef(null);
+  const mobileRef = useRef(null);
+  const excelAppRef = useRef(null);
 
   const handleWebsite = () => {
-    aWebsite.parentElement.classList.contains("open")
-      ? aWebsite.parentElement.classList.remove("open")
-      : aWebsite.parentElement.classList.add("open");
+    if (websiteRef.current?.parentElement.classList.contains("open")) {
+      websiteRef.current.parentElement.classList.remove("open");
+    } else {
+      websiteRef.current.parentElement.classList.add("open");
+    }
   };
   const handleMobile = () => {
-    mobileApp.parentElement.classList.contains("open")
-      ? mobileApp.parentElement.classList.remove("open")
-      : mobileApp.parentElement.classList.add("open");
+    if (mobileRef.current?.parentElement.classList.contains("open")) {
+      mobileRef.current.parentElement.classList.remove("open");
+    } else {
+      mobileRef.current.parentElement.classList.add("open");
+    }
   };
   const handleExcel = () => {
-    excelApp.parentElement.classList.contains("open")
-      ? excelApp.parentElement.classList.remove("open")
-      : excelApp.parentElement.classList.add("open");
+    if (excelAppRef.current?.parentElement.classList.contains("open")) {
+      excelAppRef.current.parentElement.classList.remove("open");
+    } else {
+      excelAppRef.current.parentElement.classList.add("open");
+    }
   };
 
   return (
@@ -48,7 +52,12 @@ const Services = () => {
       <div className="our-services">
         <div className="services-container">
           <div className="item">
-            <div className="top" id="a-website" onClick={handleWebsite}>
+            <div
+              className="top"
+              ref={websiteRef}
+              id="a-website"
+              onClick={handleWebsite}
+            >
               <div className="image-container">
                 <img src={service01} alt="" className="service-image" />
               </div>
@@ -108,7 +117,7 @@ const Services = () => {
                   </p> */}
                   <div className="btn-container">
                     <a
-                      href="https://wa.me/237620232111"
+                      href="https://wa.me/237673758734"
                       style={{ color: "white", textDecoration: "none" }}
                     >
                       <button className="order-btn">Commander</button>
@@ -119,9 +128,18 @@ const Services = () => {
             </div>
           </div>
           <div className="item">
-            <div className="top" id="mobile-app" onClick={handleMobile}>
+            <div
+              className="top"
+              ref={mobileRef}
+              id="mobile-app"
+              onClick={handleMobile}
+            >
               <div className="image-container">
-                <img src={service02} alt="" className="service-image" />
+                <img
+                  src={service02}
+                  alt="Conception d'Appli Mobile"
+                  className="service-image"
+                />
               </div>
               <h5 className="title">Conception d'Appli Mobile</h5>
               <button
@@ -141,10 +159,9 @@ const Services = () => {
                     technologies les plus récentes.
                   </p>
                   <p className="two">
-                    Qu'il s'agisse d'un site statique ou dynamique, notre équipe
-                    d'expert doté de plusieurs années d'expérience s'atèle à la
-                    tâche pour vous offrir la meilleure des solution Web dans
-                    les temps impartis
+                    Notre équipe d'expert doté de plusieurs années d'expérience
+                    s'atèle à la tâche pour vous offrir la meilleure des
+                    solution Web dans les temps impartis
                   </p>
                 </div>
                 <div className="right">
@@ -179,7 +196,7 @@ const Services = () => {
                   </p> */}
                   <div className="btn-container">
                     <a
-                      href="https://wa.me/237620232111"
+                      href="https://wa.me/237673758734"
                       style={{ color: "white", textDecoration: "none" }}
                     >
                       <button className="order-btn">Commander</button>
@@ -190,9 +207,18 @@ const Services = () => {
             </div>
           </div>
           <div className="item">
-            <div className="top" id="excel-app" onClick={handleExcel}>
+            <div
+              className="top"
+              ref={excelAppRef}
+              id="excel-app"
+              onClick={handleExcel}
+            >
               <div className="image-container">
-                <img src={service03} alt="" className="service-image" />
+                <img
+                  src={service03}
+                  alt="Conception d'Appli Excel VBA"
+                  className="service-image"
+                />
               </div>
               <h5 className="title">Conception d'Appli Excel VBA</h5>
               <button
@@ -251,7 +277,7 @@ const Services = () => {
                   </p> */}
                   <div className="btn-container">
                     <a
-                      href="https://wa.me/237620232111"
+                      href="https://wa.me/237673758734"
                       style={{ color: "white", textDecoration: "none" }}
                     >
                       <button className="order-btn">Commander</button>

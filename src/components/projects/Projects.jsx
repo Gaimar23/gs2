@@ -10,38 +10,6 @@ import { HiMiniArrowLongLeft } from "react-icons/hi2";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 const Projects = () => {
-  // const ourProjects = [
-  //   {
-  //     title: "Business StartUp",
-  //     description: "Design & Development",
-  //     image: Project1,
-  //   },
-  //   {
-  //     title: "Excel Business App",
-  //     description: "Excel Development",
-  //     image: Project2,
-  //   },
-  //   {
-  //     title: "Business StartUp",
-  //     description: "Design & Development",
-  //     image: Project2,
-  //   },
-  //   {
-  //     title: "Client Project",
-  //     description: "Mobile Development",
-  //     image: Project3,
-  //   },
-  //   {
-  //     title: "Business StartUp",
-  //     description: "Design & Development",
-  //     image: Project1,
-  //   },
-  //   {
-  //     title: "Business StartUp",
-  //     description: "Design & Development",
-  //     image: Project3,
-  //   },
-  // ];
   const ourProjects = [
     {
       title: "Appli Web",
@@ -53,10 +21,15 @@ const Projects = () => {
       description: "Design & Developpement",
       video: "https://www.youtube.com/embed/aNLQTZa6TwM?si=LWum6R-Qk-prolIT",
     },
+    // {
+    //   title: "Excel Business App",
+    //   description: "Excel Development",
+    //   video: "https://www.youtube.com/embed/ZklG6SC05Cg?si=ktzvM-0fwkHYA9Nc",
+    // },
     {
       title: "Excel Business App",
       description: "Excel Development",
-      video: "https://www.youtube.com/embed/ZklG6SC05Cg?si=ktzvM-0fwkHYA9Nc",
+      video: "https://www.youtube.com/embed/S8mO6h7xv-U?si=7-uZHvAkrYCV69d-",
     },
     {
       title: "Client Project",

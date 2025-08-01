@@ -14,17 +14,6 @@ const Projets = () => {
         text="Quelque uns des projets réalisés & encours"
         details="Nous combinons l'Ingéniosité et la Technologie pour répondre à vos besoins, pour vous délivrer la solution optimale pour votre business"
       />
-      {/* <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: "20px",
-          marginBottom: "20px",
-        }}
-      >
-        Encours de design
-      </div> */}
       <div className="section-app-web">
         <div className="app-web-mobile">
           <AppWeb />

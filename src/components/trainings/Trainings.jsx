@@ -46,25 +46,6 @@ const Trainings = () => {
     ],
   };
 
-  // const responsive = {
-  //   superLargeDesktop: {
-  //     // the naming can be any, depends on you.
-  //     breakpoint: { max: 4000, min: 3000 },
-  //     items: 5,
-  //   },
-  //   desktop: {
-  //     breakpoint: { max: 3000, min: 1024 },
-  //     items: 3,
-  //   },
-  //   tablet: {
-  //     breakpoint: { max: 1024, min: 464 },
-  //     items: 2,
-  //   },
-  //   mobile: {
-  //     breakpoint: { max: 464, min: 0 },
-  //     items: 1,
-  //   },
-  // };
   return (
     <div className="trainings">
       <div className="trainings-container">
@@ -77,78 +58,9 @@ const Trainings = () => {
           {/* Nos différentes formations sur divers sujetsNos différentes formations
           sur divers sujets Nos différentes formations sur divers sujets */}
         </p>
-        {/* <Carousel
-          swipeable={false}
-          draggable={false}
-          responsive={responsive}
-          infinite={true}
-          autoPlaySpeed={1000}
-          className="trainings-slider"
-        >
-          <div className="item">
-            <img src={Training1} alt="" />
-            <h5>Excel: Les Bases</h5>
-          </div>
-          <div className="item">
-            <img src={Training1} alt="" />
-            <h5>Excel: Tableau de Bord & TCD</h5>
-          </div>
-          <div className="item">
-            <img src={Training1} alt="" />
-            <h5>Excel: Développement VBA</h5>
-          </div>
-          <div className="item">
-            <img src={Training1} alt="" />
-            <h5>Développement Web</h5>
-          </div>
-          <div className="item">
-            <img src={Training1} alt="" />
-            <h5>Développement Mobile</h5>
-          </div>
-        </Carousel> */}
 
         <div className="slider-container">
           <Slider {...settings} className="trainings-slider">
-            {/* <div className="item">
-              <div className="item-container">
-                <img src={Training1} alt="" />
-                <h5>Excel</h5>
-                <strong className="details">Les Bases</strong>
-                <button className="souscrire">Souscrire</button>
-              </div>
-            </div>
-            <div className="item">
-              <div className="item-container">
-                <img src={Training1} alt="" />
-                <h5>Excel</h5>
-                <strong className="details">Tableau de Bord & TCD</strong>
-                <button className="souscrire">Souscrire</button>
-              </div>
-            </div>
-            <div className="item">
-              <div className="item-container">
-                <img src={Training1} alt="" />
-                <h5>Excel</h5>
-                <strong>Développement VBA</strong>
-                <button className="souscrire">Souscrire</button>
-              </div>
-            </div> */}
-            {/* <div className="item">
-              <div className="item-container">
-                <img src={Training1} alt="" />
-                <h5>Développement Web</h5>
-                <strong>HTML,CSS, javascript</strong>
-                <button className="souscrire">Souscrire</button>
-              </div>
-            </div> */}
-            {/* <div className="item">
-              <div className="item-container">
-                <img src={Training1} alt="" />
-                <h5>Développement Mobile</h5>
-                <strong>HTML,CSS, javascript</strong>
-                <button className="souscrire">Souscrire</button>
-              </div>
-            </div> */}
             {trainingList.map((course, index) => {
               return (
                 <div className="item" key={index}>
@@ -159,7 +71,7 @@ const Trainings = () => {
                     <a
                       // href={"https://wa.me/237620232111?text" + course.whatsapp}
                       href={
-                        "https://wa.me/237620232111?text=" + course.whatsapp
+                        "https://wa.me/237673758734?text=" + course.whatsapp
                       }
                       style={{ color: "white", textDecoration: "none" }}
                     >
